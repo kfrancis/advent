@@ -7,14 +7,14 @@ namespace AdventOfCode.Tests
     public class Day1Tests
     {
         [TestMethod]
-        public void Day1_Example1()
+        public void Day1_Part1_Example1()
         {
             // Arrange
             var problem = new day1();
 
             // Act
-            int result1 = problem.Solve("(())");
-            int result2 = problem.Solve("()()");
+            int result1 = problem.SolvePart1("(())");
+            int result2 = problem.SolvePart1("()()");
 
             // Assert
             Assert.AreEqual(0, result1);
@@ -22,14 +22,14 @@ namespace AdventOfCode.Tests
         }
 
         [TestMethod]
-        public void Day1_Example2()
+        public void Day1_Part1_Example2()
         {
             // Arrange
             var problem = new day1();
 
             // Act
-            int result1 = problem.Solve("(((");
-            int result2 = problem.Solve("(()(()(");
+            int result1 = problem.SolvePart1("(((");
+            int result2 = problem.SolvePart1("(()(()(");
 
             // Assert
             Assert.AreEqual(3, result1);
@@ -37,27 +37,27 @@ namespace AdventOfCode.Tests
         }
 
         [TestMethod]
-        public void Day1_Example3()
+        public void Day1_Part1_Example3()
         {
             // Arrange
             var problem = new day1();
 
             // Act
-            int result = problem.Solve("))(((((");
+            int result = problem.SolvePart1("))(((((");
 
             // Assert
             Assert.AreEqual(3, result);
         }
 
         [TestMethod]
-        public void Day1_Example4()
+        public void Day1_Part1_Example4()
         {
             // Arrange
             var problem = new day1();
 
             // Act
-            int result1 = problem.Solve("())");
-            int result2 = problem.Solve("))(");
+            int result1 = problem.SolvePart1("())");
+            int result2 = problem.SolvePart1("))(");
 
             // Assert
             Assert.AreEqual(-1, result1);
@@ -65,14 +65,14 @@ namespace AdventOfCode.Tests
         }
 
         [TestMethod]
-        public void Day1_Example5()
+        public void Day1_Part1_Example5()
         {
             // Arrange
             var problem = new day1();
 
             // Act
-            int result1 = problem.Solve(")))");
-            int result2 = problem.Solve(")())())");
+            int result1 = problem.SolvePart1(")))");
+            int result2 = problem.SolvePart1(")())())");
 
             // Assert
             Assert.AreEqual(-3, result1);

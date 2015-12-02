@@ -8,6 +8,7 @@ namespace AdventOfCode
 {
     public interface ISolvable
     {
-        int Solve(string input);
+        int SolvePart1(string input);
+        int SolvePart2(string input);
     }
 }

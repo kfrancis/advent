@@ -29,7 +29,7 @@ namespace AdventOfCode
         /// <returns></returns>
         public int SolvePart1(string input)
         {
-            return Solve(input);
+            return input.Sum(x => x == '(' ? 1 : x == ')' ? -1 : 0);
         }
 
         /// <summary>
@@ -60,12 +60,5 @@ namespace AdventOfCode
 
             return index+1;
         }
-
-        public int Solve(string input)
-        {
-            return input.Sum(x => x == '(' ? 1 : x == ')' ? -1 : 0);
-        }
-
-
     }
 }
