@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="day1.cs" />
+    <Compile Include="day4.cs" />
     <Compile Include="day3.cs" />
     <Compile Include="day2.cs" />
     <Compile Include="GlobalSuppressions.cs" />

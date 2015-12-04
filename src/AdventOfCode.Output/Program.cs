@@ -26,6 +26,10 @@ namespace AdventOfCode.Output
             string day3Input = File.ReadAllText(@"input\day3.txt");
             Console.WriteLine("DAY3.1: Houses recieving at least one present? {0}", day3.SolvePart1(day3Input));
             Console.WriteLine("DAY3.2: Houses recieving at least one present with two santas? {0}", day3.SolvePart2(day3Input));
+
+            var day4 = new day4();
+            Console.WriteLine("DAY4.1: Lowest number with five leading zeros? {0}", day4.SolvePart1("yzbqklnj"));
+            Console.WriteLine("DAY4.2: Lowest number with six leading zeros? {0}", day4.SolvePart2("yzbqklnj"));
         }
     }
 }
